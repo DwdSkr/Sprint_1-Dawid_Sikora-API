@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<section id="search-section">
+			<p>Filtry:</p>
+			<input type="text" id="name-search" placeholder="Wyszukaj po nazwie..." />
+			<input type="radio" id="alive" name="status" value="alive" checked />
+			<label for="alive">Żywy</label>
+			<input type="radio" id="dead" name="status" value="dead" />
+			<label for="dead">Martwy</label>
+			<input type="radio" id="unknown" name="status" value="unknown" />
+			<label for="unknown">Nieznane</label>
+		</section>
+		<section id="characters"></section>
+		<section id="pagination-section">
+			<button id="back-page">
+				<img src="./icons/arrow-left-solid.svg" alt="arrow-left" />
+			</button>
+			<button id="forward-page">
+				<img src="./icons/arrow-right-solid.svg" alt="arrow-right" />
+			</button>
+		</section>
+		<script type="module" src="./index.js"></script>
+	</body>
+</html>
